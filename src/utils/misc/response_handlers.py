@@ -3,11 +3,17 @@ from datetime import datetime, timedelta
 
 def limpa_horarios(response):
     """
-        Função que limpa a resposta do LLM de horários disponíveis para reuniões.
+        Função que organiza o response da api 'get_calendar', organizando e colocando no timestamp na zona UTC-3, usado pela socium.
     """
+
+    #print(response.json())
+
+    response = response.json()['value']
+
     # Ensure response is a list and contains dictionaries
     if not isinstance(response, list):
         return {"error": "Invalid response format"}, 400
+    
 
     parsed_response = []
 
