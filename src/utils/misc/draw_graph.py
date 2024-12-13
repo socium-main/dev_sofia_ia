@@ -1,5 +1,5 @@
 from IPython.display import Image
-from utils.misc.time_formatter import get_current_time
+from src.utils.misc.time_formatter import get_current_time
 import os
 
 def save_graph_as_jpeg(graph, folder_name: str):
