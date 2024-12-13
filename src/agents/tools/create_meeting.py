@@ -1,6 +1,7 @@
 
+from utils.external_apis.microsoft.graph import *
 
-def schedule_meeting(subject: str, start_time:str, end_time:str, attendees_emails:list, location:str = "Online", html_content =""):
+def create_meeting(subject: str, start_time:str, end_time:str, attendees_emails:list, location:str = "Online", html_content =""):
     """
     Schedules a meeting using the Microsoft Graph API.
 

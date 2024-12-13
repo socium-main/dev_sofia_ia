@@ -1,8 +1,8 @@
 import datetime as dt
 import requests
+import json
 
-
-def get_schedule():
+def get_schedule()-> json:
     """
         Você é uma assistente administrativa que vai ver nossos horários disponíveis e retonar uma mensagem amigável para humanos
         com o horário aberto para a próxima reunião. Não precisa mostrar todos, a menos que o usuário peça.
