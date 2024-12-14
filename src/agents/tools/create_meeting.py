@@ -1,5 +1,5 @@
-
-from utils.external_apis.microsoft.graph import *
+import json
+from src.utils.external_apis.microsoft.graph import *
 
 def create_meeting(subject: str, start_time:str, end_time:str, attendees_emails:list, location:str = "Online", html_content =""):
     """

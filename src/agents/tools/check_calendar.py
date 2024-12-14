@@ -8,6 +8,7 @@ from langchain.tools import tool
 import json
 
 
+
 def check_calendar()-> json:
     """
     Recebe e formata horários dos eventos de calendário dos donos da Socium.
